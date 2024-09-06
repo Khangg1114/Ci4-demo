@@ -1,0 +1,28 @@
+<!-- Thanh điều hướng -->
+<nav>
+  <ul>
+    <li><a href="#">Trang chủ</a></li>
+    <li><a href="#">Dịch vụ</a></li>
+    <li><a href="#">Tin tức</a></li>
+    <li><a href="#">Liên hệ</a></li>
+  </ul>
+</nav>
+
+<!-- Phần chính -->
+<section class="main-content">
+  <h1>Chào mừng đến với HealthMate</h1>
+  <p>Khám phá dịch vụ và bác sĩ của chúng tôi</p>
+  
+  <!-- Phần danh sách người dùng gần đây -->
+  <h2>Người dùng gần đây</h2>
+  <ul>
+    <li *ngFor="let user of users">
+      {{ user.name }} - {{ user.email }}
+    </li>
+  </ul>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; AAA</p>
+</footer>
